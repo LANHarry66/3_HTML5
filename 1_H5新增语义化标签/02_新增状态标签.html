@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        progress{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <span>手机电量:</span>
+    <!-- 小于10警告 红色，10-20 黄色  20-100绿色 -->
+    <!-- 没有optium，在lou和high之间都是合理的，高于high低于low会出现黄色警告。给了optium，确定了最佳值区间，在这个区间中会变成绿色
+        假如optium=90，那么在20-100的值都会变为绿色 -->
+    <meter max="100" min="0" value="80" low="10" high="20" optimum="90"></meter>
+    <br>
+    <!--  -->
+    <span>当前进度:</span>
+    <progress max="100" value="80"></progress>
+</body>
+</html>

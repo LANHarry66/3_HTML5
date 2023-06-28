@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        账号：<input 
+                type="text" 
+                name="account" 
+                placeholder="请输入账号" 
+                required 
+                autofocus 
+                autocomplete="on" 
+                pattern="\w{6}"
+            >
+        <br>
+        密码：<input type="password" name="psw" placeholder="请输入密码">
+        <br>
+        性别：
+        <label><input type="radio" value="male" name="gender" checked>男</label>
+        <label><input type="radio" value="female" name="gender">女</label>
+        <br>
+        爱好：
+        <label><input type="checkbox" name="hobby" value="smoke">抽烟</label>
+        <label><input type="checkbox" name="hobby" value="drink">喝酒</label>
+        <label><input type="checkbox" name="hobby" value="hair">烫头</label>
+        <br>
+        其他：
+        <textarea name="other" cols="30" rows="10" placeholder="其他要素"></textarea>
+        <br>
+        <button>提交</button>
+        <input type="reset">
+    </form>
+</body>
+</html>
+
+<!-- 新增属性
+    1.placeholder:输入框提示
+    2.required：必选项
+    3.autofocus:自动对焦，一般放在第一个
+    4.autocomplete:自动提示以前输入过的内容，值为off/on
+    5.pattern:值为正则表达式，输入内容为字母、数字、下划线
+ -->
